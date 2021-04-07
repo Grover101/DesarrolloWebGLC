@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #dedede;
+}
+
+a {
+  color: #529125;
+  text-decoration: none;
+}
+
+.wrap {
+  width: 1250px;
+  margin: 0px auto;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: white;
+}
+
+.wrap h3 {
+  display: block;
+  float: left;
+  font-size: 30px;
+  margin: 6.5px 0 6.5px 10px;
+}
+
+.menu {
+  float: right;
+  height: 50px;
+}
+
+.menu ul {
+  margin: 0px auto;
+}
+
+.menu ul li {
+  font-size: 24px;
+  display: inline-block;
+  line-height: 50px;
+}
+
+.menu ul li a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+.menu ul li:hover {
+  background-color: #70b231;
+  box-shadow: 0px 0px 15px green inset;
+}
+
+.seccion {
+  display: flex;
+  width: 1250px;
+  min-width: 1100px;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+.perfil {
+  /* float: left; */
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.perfil img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.contenido {
+  flex: 0 0 60.666667%;
+  max-width: 60.666667%;
+  position: relative;
+  width: 100%;
+  text-align: justify;
+  justify-content: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  line-height: 20pt;
+}
+
+.span {
+  /* float: left; */
+  width: 1250px;
+  min-width: 1100px;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+.menuvertical {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+.menuvertical > li a:link,
+.menuvertical > li a:visited {
+  font-size: 30px;
+  margin: 15px;
+  width: 400px;
+  height: 50px;
+  padding-top: 20px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+.menuvertical > li a:hover {
+  font-size: 35px;
+  color: white;
+  background: black;
+  border: 2px solid black;
+  box-shadow: 1px 1px 10px black;
+}
+
+.nota {
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgb(248, 51, 51);
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}

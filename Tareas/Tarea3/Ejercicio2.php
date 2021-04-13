@@ -29,7 +29,7 @@
                     for ($n = 0; $n < $i; $n++) {
                         echo "<tr>";
                         for ($m = 0; $m < $j; $m++)
-                            echo "<td><pre> </pre></td>";
+                            echo "<td>&nbsp</td>";
                         echo "</tr>";
                     }
                 }

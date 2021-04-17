@@ -66,16 +66,16 @@
 }
 
 .publicidad {
-  flex: 0 0 10.333333%;
-  max-width: 10.333333%;
+  flex: 0 0 20.333333%;
+  max-width: 20.333333%;
   position: relative;
   width: 100%;
   text-align: center;
 }
 
 .publicaciones {
-  flex: 0 0 79.333334%;
-  max-width: 79.333334%;
+  flex: 0 0 59.333334%;
+  max-width: 59.333334%;
   position: relative;
   width: 100%;
   text-align: justify;
@@ -93,14 +93,26 @@
   max-width: 33.333333%;
   position: relative;
   width: 100%;
-  text-align: center;
 }
 
 .publ1 {
-  flex: 0 0 60.666667%;
-  max-width: 60.666667%;
+  flex: 0 0 50.666667%;
+  max-width: 50.666667%;
   position: relative;
   width: 100%;
-  text-align: justify;
-  justify-content: center;
+}
+
+.marco {
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 5px black;
+  line-height: 20pt;
+}
+.marco:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+}
+.marco img {
+  width: 100%;
 }

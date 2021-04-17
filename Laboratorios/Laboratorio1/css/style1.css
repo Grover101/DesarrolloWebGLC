@@ -1,0 +1,92 @@
+.contenido,
+.cabecera,
+.menu,
+.caracteristicas,
+.footer {
+  font-family: sans-serif;
+  margin: auto;
+  width: 900px;
+}
+.logo {
+  text-align: center;
+}
+
+.cabecera {
+  border: 1px solid black;
+  text-align: center;
+  background-color: #c00000;
+}
+
+.datos {
+  text-align: left;
+  color: white;
+  padding: 10px;
+}
+
+.content {
+  width: 900px;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.menu {
+  background-color: #b8cce4;
+  float: right;
+  height: 50px;
+}
+
+.menu ul {
+  margin: 10px auto;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  display: block;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.caracteristicas {
+  clear: both;
+  padding-top: 20px;
+  background-color: #548dd4;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+}
+
+.vida,
+.mi,
+.bolivia {
+  height: 20px;
+  width: 300px;
+  text-decoration: underline;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.vida {
+  background-color: #f00;
+}
+
+.mi {
+  background-color: #ffff00;
+}
+
+.bolivia {
+  background-color: #00b050;
+}

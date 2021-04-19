@@ -1,12 +1,8 @@
-<meta http-equiv="refresh" content="4;URL=menu.php">
-
 <?php
 if (isset($_COOKIE['a']) && isset($_COOKIE['a'])) {
     $a = $_COOKIE['a'];
     $b = $_COOKIE['b'];
-
-    $operacion = $_GET["operacion"];
-    switch ($operacion) {
+    switch ($_GET["operacion"]) {
         case 'suma':
             echo "La suma es:", $a + $b;
             break;
@@ -21,3 +17,5 @@ if (isset($_COOKIE['a']) && isset($_COOKIE['a'])) {
             break;
     }
 }
+?>
+<meta http-equiv="refresh" content="4;URL=menu.php<?php echo "?a=$a&b=$b" ?>">

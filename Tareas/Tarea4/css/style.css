@@ -1,0 +1,97 @@
+table {
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 6px;
+  border-collapse: collapse;
+  box-shadow: 3px 3px 5px black;
+}
+
+td {
+  padding: 15px 15px;
+  border-radius: 5px;
+  margin: 8px 10px;
+  display: inline-block;
+  box-shadow: 3px 3px 5px black inset;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+}
+
+.contenido {
+  display: inline-flex;
+  margin: auto;
+  width: 50%;
+  text-align: justify;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px black;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.form {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.form,
+form {
+  text-align: center;
+  padding: 16px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+}
+
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+form input[type="number"] {
+  width: 90%;
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 8px 5px;
+  display: inline-block;
+}
+
+form button {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

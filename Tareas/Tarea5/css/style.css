@@ -5,7 +5,7 @@ table {
 
 td {
   padding: 8px;
-  border: 2px solid red;
+  border: 1px solid black;
 }
 
 h1 {
@@ -99,4 +99,17 @@ form button:hover {
 
 p {
   margin-top: 30px;
+}
+
+.bolivia1,
+.chuquisaca2 {
+  background-color: #d52b1e;
+}
+
+.bolivia2 {
+  background-color: #f9e300;
+}
+
+.bolivia3 {
+  background-color: #007934;
 }

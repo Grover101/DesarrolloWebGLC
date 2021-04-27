@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insertar Libro</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>Insertar Libro</h1>
+    <div class="contenido">
+      <a href="./index.php" class="volver">Volver</a>
+      <form action="./insertar.php" method="GET">
+        <label for="nro">Introduzca el numero Estante (1, 2, 3):</label>
+        <input type="number" name="nroFila" id="nro" required />
+        <label for="libro">Introduzca el Libro: </label>
+        <input type="text" name="libro" id="libro" required />
+        <button type="submit" name="enviar">Insertar</button>
+      </form>
+    </div>
+  </body>
+</html>

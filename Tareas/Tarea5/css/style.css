@@ -8,7 +8,8 @@ td {
   border: 1px solid black;
 }
 
-h1 {
+h1,
+h2 {
   margin: auto;
   text-align: center;
 }
@@ -51,11 +52,12 @@ form label {
   display: inline-block;
 }
 
-input[type="number"] {
+input[type="number"],
+input[type="text"] {
   -moz-appearance: textfield;
 }
 
-form input[type="number"] {
+form input {
   width: 90%;
   padding: 10px 10px;
   border: 1px solid black;

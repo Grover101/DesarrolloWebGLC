@@ -11,6 +11,7 @@
 
 <body>
     <div class="contenido">
+        <a href="./formtabla.html" class="volver">Volver</a>
         <table>
             <?php
             if (isset($_POST['fila']) && $_POST['columna']) {

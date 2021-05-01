@@ -150,3 +150,8 @@ p {
   background-color: #e36c0a;
   text-decoration: underline;
 }
+
+.mensaje {
+  margin: auto;
+  margin-top: 20px;
+}

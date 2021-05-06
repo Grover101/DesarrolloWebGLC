@@ -155,3 +155,17 @@ p {
   margin: auto;
   margin-top: 20px;
 }
+
+.registro {
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 10px 10px;
+  color: black;
+  font-weight: 600;
+}
+
+.registro:hover {
+  color: white;
+  background-color: black;
+}

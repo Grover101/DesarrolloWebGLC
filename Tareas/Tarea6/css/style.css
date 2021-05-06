@@ -64,9 +64,25 @@ form label {
   display: inline-block;
 }
 
+select {
+  width: 90%;
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
 input[type="number"],
 input[type="text"] {
   -moz-appearance: textfield;
+}
+
+.radio {
+  width: 30px;
+  border-radius: 100%;
+  margin-left: 20px;
+  left: 15px;
 }
 
 form input {

@@ -19,7 +19,9 @@ $query = mysqli_query($con, $sql);
 </head>
 
 <body>
+    <h1>Crear</h1>
     <div class="contenido">
+        <a href="./mostrarHabitacion.php" class="volver">Volver</a>
         <form action="./crearHabitacion.php" method="POST">
             <label for="nro">Nro</label>
             <input type="number" name="nro" id="nro">
@@ -38,8 +40,8 @@ $query = mysqli_query($con, $sql);
             <br>
             <label for="banio">Baño Privado</label>
             <br>
-            <input type="radio" name="banio" id="" value="1" checked>Tiene
-            <input type="radio" name="banio" id="" value="0">No tiene<br>
+            <input type="radio" class="radio" name="banio" id="" value="1" checked>Tiene
+            <input type="radio" class="radio" name="banio" id="" value="0">No tiene<br>
             <label for="espacio">Espacio</label>
             <input type="number" name="espacio" id="espacio">
             <label for="precio">Precio</label>

@@ -19,7 +19,9 @@ $tipohabitacion = mysqli_fetch_array($query);
 </head>
 
 <body>
+    <h1>Editar</h1>
     <div class="contenido">
+        <a href="./mostrar.php" class="volver">Volver</a>
         <form action="./editar.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
             <label for="descripcion">Descripcion</label>

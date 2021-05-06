@@ -40,7 +40,7 @@
             ?>
         </table>
         <br>
-        <a href="./formCrear.php" class="registro">Registar Habitacion</a>
+        <a href="./formCrear.php" class="registro">Registar Tipo de Habitacion</a>
     </div>
 </body>
 

@@ -1,12 +1,3 @@
-<?php
-include '../conexion.php';
-
-$sql = "SELECT * FROM tipohabitacion";
-
-$query = mysqli_query($con, $sql);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,32 +10,15 @@ $query = mysqli_query($con, $sql);
 </head>
 
 <body>
+    <h2>Crear</h2>
     <div class="contenido">
+        <a href="./mostrar.php" class="volver">Volver</a>
         <form action="./crear.php" method="POST">
-            <label for="nro">Nro</label>
-            <input type="number" name="nro" id="nro">
-            <label for="">Tipo de Habitacion</label>
-            <select name="tipohabitacion" id="">
-                <?php
-                while ($fila = mysqli_fetch_array($query)) {
-                ?>
-                <option value="<?php echo $fila['id'] ?>">
-                    <?php echo $fila['descripcion'] ?>
-                </option>
-                <?php
-                }
-                ?>
-            </select>
-            <br>
-            <label for="banio">Baño Privado</label>
-            <br>
-            <input type="radio" name="banio" id="" value="1" checked>Tiene
-            <input type="radio" name="banio" id="" value="0">No tiene<br>
-            <label for="espacio">Espacio</label>
-            <input type="number" name="espacio" id="espacio">
-            <label for="precio">Precio</label>
-            <input type="number" name="precio" id="precio">
-            <button type="submit" value="crear">Crear</button>
+            <label for="descripcion">Descripcion</label>
+            <input type="text" name="descripcion" id="descripcion">
+            <label for="nroCamas">Nro Camas</label>
+            <input type="number" name="nroCamas" id="nroCamas">
+            <button type="submit" value="crear">Registrar</button>
         </form>
     </div>
 </body>

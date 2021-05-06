@@ -21,7 +21,9 @@ $habitacion = mysqli_fetch_array($query2);
 </head>
 
 <body>
+    <h1>Editar</h1>
     <div class="contenido">
+        <a href="./mostrarHabitacion.php" class="volver">Volver</a>
         <form action="./editarHabitacion.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
             <label for="nro">Nro</label>
@@ -42,9 +44,9 @@ $habitacion = mysqli_fetch_array($query2);
             <br>
             <label for="banio">Baño Privado</label>
             <br>
-            <input type="radio" name="banio" id="" value="1" 1
+            <input type="radio" class="radio" name="banio" id="" value="1" 1
                 <?php echo '1' == $habitacion['banoprivado'] ? 'checked' : ''; ?>>Tiene
-            <input type="radio" name="banio" id="" value="0"
+            <input type="radio" class="radio" name="banio" id="" value="0"
                 <?php echo '0' == $habitacion['banoprivado'] ? 'checked' : ''; ?>>No tiene<br>
             <label for="espacio">Espacio</label>
             <input type="number" name="espacio" id="espacio" value="<?php echo $habitacion['espacio'] ?>">

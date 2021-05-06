@@ -46,7 +46,7 @@
             ?>
         </table>
         <br>
-        <a href="./formCrearHabitacion.php" class="volver">Registar Habitacion</a>
+        <a href="./formCrearHabitacion.php" class="registro">Registar Habitacion</a>
     </div>
 </body>
 

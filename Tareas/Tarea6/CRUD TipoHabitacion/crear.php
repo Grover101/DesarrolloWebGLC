@@ -1,14 +1,10 @@
 <?php
 include '../conexion.php';
 
-$nro = $_POST['nro'];
-$tipohabitacion = $_POST['tipohabitacion'];
-$banio = $_POST['banio'];
-$espacio = $_POST['espacio'];
-$precio = $_POST['precio'];
+$descripcion = $_POST['descripcion'];
+$nroCamas = $_POST['nroCamas'];
 
-$sql = "INSERT INTO habitacion (nro,idtipohabitacion,banoprivado,espacio,precio) VALUES($nro,$tipohabitacion,$banio,$espacio,$precio);";
-
+$sql = "INSERT INTO tipohabitacion (descripcion,nroCamas) VALUES('$descripcion',$nroCamas)";
 
 $query = mysqli_query($con, $sql);
 
@@ -16,4 +12,4 @@ mysqli_close($con);
 ?>
 
 <h1>Creacion Completada</h1>
-<meta http-equiv="refresh" content="4;URL=mostrarHabitacion.php">
+<meta http-equiv="refresh" content="4;URL=mostrar.php">

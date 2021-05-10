@@ -18,5 +18,20 @@ for ($i = 0; $i < $n; $i++) {
 $query = mysqli_query($con, $sql);
 mysqli_close($con);
 ?>
-Registrados con exito
-<meta http-equiv="refresh" content="4;URL=Alumnos.php">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4;URL=Alumnos.php">
+    <title>Insertado</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Registrados con exito</h1>
+</body>
+
+</html>

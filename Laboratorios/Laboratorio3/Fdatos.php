@@ -17,7 +17,7 @@ $n = $_POST['n'];
 <body>
     <h1>Resgistrar Alumnos</h1>
     <a href="./Fintroduccion.html" class="volver">Volver</a>
-    <form action="./insertar.php" method="POST">
+    <form action="./insertar.php" method="POST" class="form">
         <div class="content titulos">
             <label for="">Nombres</label>
             <label for="">Apellidos</label>

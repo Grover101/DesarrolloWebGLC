@@ -54,6 +54,10 @@ form {
   box-shadow: 5px 5px 10px black;
 }
 
+.form {
+  width: 95%;
+}
+
 .content {
   display: flex;
   width: 1250px;
@@ -77,7 +81,7 @@ form label {
 }
 
 select {
-  width: 21%;
+  width: 22%;
   padding: 10px 10px;
   border: 1px solid black;
   border-radius: 3px;
@@ -163,25 +167,6 @@ form button:hover {
 }
 
 .volver:hover {
-  color: white;
-  background-color: black;
-}
-
-.mensaje {
-  margin: auto;
-  margin-top: 20px;
-}
-
-.registro {
-  text-decoration: none;
-  border-radius: 3px;
-  border: 1px solid black;
-  padding: 10px 10px;
-  color: black;
-  font-weight: 600;
-}
-
-.registro:hover {
   color: white;
   background-color: black;
 }

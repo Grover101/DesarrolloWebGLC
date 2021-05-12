@@ -44,7 +44,7 @@ if (!isset($_SESSION['nombres'])) {
                     <li class="rojo"><a href="./index.php">Inicio</a></li>
                     <li class="amarillo"><a href="./Ejercicio 3/pregunta3.php">Pregunta 3</a></li>
                     <li class="verde"><a href="./Ejercicio 4/formcalendario.html">Pregunta 4</a></li>
-                    <li><a href="#">Pregunta 5</a></li>
+                    <li><a href="./Ejercicio 5/pregunta5.php">Pregunta 5</a></li>
                 </ul>
             </div>
         </div>

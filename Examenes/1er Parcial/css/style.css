@@ -183,6 +183,7 @@ form button:hover {
   color: white;
 }
 
+h1,
 h2,
 h5 {
   margin: auto;
@@ -206,4 +207,30 @@ h5 {
 }
 .par {
   background-color: #ffffff;
+}
+
+.contenido > .form {
+  width: 100%;
+  border: none;
+}
+
+.form table th {
+  background-color: #002060;
+}
+
+.form table .colorPar {
+  background-color: #dbe5f1;
+}
+
+.form table .colorImpar {
+  background-color: #8db3e2;
+}
+
+.error {
+  color: red;
+}
+
+.notificacion {
+  background-color: #20c997;
+  color: white;
 }

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <h1>Lista de Usuarios</h1>
     <a href="../index.php" class="cerrar">Volver</a>
     <div class="contenido">
         <table>
@@ -31,6 +32,7 @@
             </tr>
             <?php
             }
+            mysqli_close($con);
             ?>
         </table>
     </div>

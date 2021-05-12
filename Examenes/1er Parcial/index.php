@@ -43,7 +43,7 @@ if (!isset($_SESSION['nombres'])) {
                 <ul class="menuvertical">
                     <li class="rojo"><a href="./index.php">Inicio</a></li>
                     <li class="amarillo"><a href="./Ejercicio 3/pregunta3.php">Pregunta 3</a></li>
-                    <li class="verde"><a href="#">Pregunta 4</a></li>
+                    <li class="verde"><a href="./Ejercicio 4/formcalendario.html">Pregunta 4</a></li>
                     <li><a href="#">Pregunta 5</a></li>
                 </ul>
             </div>

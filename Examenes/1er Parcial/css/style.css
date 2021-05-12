@@ -133,3 +133,77 @@ th {
   border: 1px solid black;
   text-align: center;
 }
+
+form {
+  width: 500px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+}
+
+select {
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form input {
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form button {
+  padding: 8px 16px;
+  margin-top: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+h2,
+h5 {
+  margin: auto;
+  text-align: center;
+}
+
+.calendario {
+  height: 150px;
+  width: 100%;
+  border-style: solid;
+  border-color: #70ad47;
+}
+
+.calendario th {
+  color: white;
+  background-color: #70ad47;
+}
+
+.impar {
+  background-color: #e2efd9;
+}
+.par {
+  background-color: #ffffff;
+}

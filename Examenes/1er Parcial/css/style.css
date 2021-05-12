@@ -1,0 +1,114 @@
+.contenido,
+.cabecera,
+.footer,
+.wrap {
+  font-family: sans-serif;
+  margin: auto;
+  width: 900px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.tecnologia {
+  margin-left: 20px;
+  width: 90px;
+}
+
+.wrap {
+  display: flex;
+}
+
+.informacion {
+  width: 770px;
+}
+
+.menu {
+  width: 130px;
+  background-color: #366f91;
+  border-right: 1px solid black;
+}
+
+.cabecera {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.datos {
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.menuvertical {
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  border-left: 1px solid black;
+}
+
+li {
+  padding: 0.3em;
+  /* display: block; */
+  text-decoration: none;
+  color: #333;
+  background: #f4f4f4;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.menuvertical li:hover {
+  background-color: white;
+}
+
+.informacion {
+  clear: both;
+  padding: 20px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.footer {
+  text-align: center;
+  height: 50px;
+  background-color: #4c9bd3;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  line-height: 20px;
+}
+
+.celeste {
+  color: #4c9bd3;
+}
+
+.rojo {
+  background-color: #ff0000;
+}
+
+.amarillo {
+  background-color: #ffff00;
+}
+
+.verde {
+  background-color: #00b050;
+}
+
+.cerrar {
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 2px 10px;
+  color: black;
+  font-weight: 600;
+}

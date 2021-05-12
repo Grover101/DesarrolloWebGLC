@@ -27,6 +27,7 @@
 .menu {
   width: 130px;
   background-color: #366f91;
+  border-left: 1px solid black;
   border-right: 1px solid black;
 }
 
@@ -69,6 +70,7 @@ li {
 }
 .menuvertical li:hover {
   background-color: white;
+  cursor: pointer;
 }
 
 .informacion {

@@ -94,7 +94,8 @@ li {
   color: #4c9bd3;
 }
 
-.rojo {
+.rojo,
+.rojo td {
   background-color: #ff0000;
 }
 
@@ -113,4 +114,22 @@ li {
   padding: 2px 10px;
   color: black;
   font-weight: 600;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #0000ff;
+  color: white;
+}
+
+td,
+th {
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
 }

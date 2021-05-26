@@ -10,6 +10,7 @@
     <script>
       function invertir(cadena) {
         var aux = "";
+        cadena = cadena.split(" ").join("").toLowerCase();
         for (let i = cadena.length - 1; i >= 0; i--) {
           aux = aux + cadena[i];
         }

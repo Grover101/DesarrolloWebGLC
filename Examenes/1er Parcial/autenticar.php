@@ -8,15 +8,10 @@ WHERE correo='$correo' AND password='$password'";
 // echo $sql;
 $query = mysqli_query($con, $sql);
 $fila = mysqli_fetch_array($query);
-setcookie("correo", 'a', time() + 3600);
-if (!isset($_COOKIE['logueados']) && !isset($_COOKIE['intentos']) && $_COOKIE['correo'] != $_SESSION['correo']) {
-    setcookie("logueados", 1, time() + 3600);
-    setcookie("intentos", 1, time() + 3600);
-}
 mysqli_close($con);
+
 if ($fila != null) {
     $valor = $_COOKIE['logueados'] + 1;
-    setcookie("nombre", $fila['correo'], time() + 3600);
     setcookie("logueados", $valor, time() + 3600);
     $_SESSION['nivel'] = $fila['nivel'];
     $_SESSION['estado'] = $fila['estado'];

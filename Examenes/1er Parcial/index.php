@@ -1,6 +1,10 @@
 <?php
 
 session_start();
+if (!isset($_COOKIE['logueados']) && !isset($_COOKIE['intentos'])) {
+    setcookie("logueados", 0, time() + 3600);
+    setcookie("intentos", 1, time() + 3600);
+}
 if (!isset($_SESSION['nombres'])) {
     header("Location: login.html");
 } else {

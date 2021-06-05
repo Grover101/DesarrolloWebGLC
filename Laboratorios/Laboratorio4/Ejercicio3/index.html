@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Ejercicio 3</title>
+  </head>
+  <body>
+    <div id="radios">
+      <input
+        type="radio"
+        id="rojo"
+        name="color"
+        value="rojo"
+        onclick="cambioColor('rojo')"
+      />
+      <label for="male">Rojo</label><br />
+      <input
+        type="radio"
+        id="amarillo"
+        name="color"
+        value="amarillo"
+        onclick="cambioColor('amarillo')"
+      />
+      <label for="female">Amarillo</label><br />
+      <input
+        type="radio"
+        id="verde"
+        name="color"
+        value="verde"
+        onclick="cambioColor('verde')"
+      />
+      <label for="other">Verde</label>
+    </div>
+    <div id="contenedor"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+#radios {
+  margin: auto;
+}
+#contenedor {
+  margin: auto;
+  border: 1px solid black;
+  width: 100px;
+  min-height: 30px;
+  text-align: center;
+}
+
+.rojo {
+  background-color: red;
+}
+
+.amarillo {
+  background-color: yellow;
+}
+
+.verde {
+  background-color: green;
+}

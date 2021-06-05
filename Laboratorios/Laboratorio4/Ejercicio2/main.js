@@ -1,7 +1,7 @@
 const seleccion = (n) => {
     let factorial = 1;
-    let opcion = ''
-    for (let i = 0; i <= n; i++) {
+    let opcion = '<option value="0">0</option>'
+    for (let i = 1; i <= n; i++) {
         factorial *= i
         opcion = opcion + `<option value="${i}">${factorial}</option>`
     }

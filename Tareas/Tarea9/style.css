@@ -1,0 +1,43 @@
+body {
+  width: 50%;
+  margin: 0 auto;
+}
+#letras {
+  background-color: lightblue;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#medio {
+  text-align: center;
+  border: solid 1px yellow;
+}
+
+#final {
+  padding: 10px;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: yellow;
+}
+
+.caja {
+  font-size: 36px;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.entrada {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+#imagen {
+  margin: auto;
+}

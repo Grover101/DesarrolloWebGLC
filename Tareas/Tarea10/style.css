@@ -1,0 +1,116 @@
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
+}
+#contenido {
+  width: 50%;
+}
+
+.seccion {
+  display: flex;
+  width: 100%;
+  min-width: 1100px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+#contenido {
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+}
+
+.menu {
+  flex: 0 0 30.666667%;
+  max-width: 30.666667%;
+  position: relative;
+}
+
+h1,
+h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.form {
+  width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.form label {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.form input,
+.form textarea {
+  width: 90%;
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.form button {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.menuvertical {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+.menuvertical > li a:link,
+.menuvertical > li a:visited {
+  font-size: 15px;
+  margin: auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  padding-top: 20px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+.menuvertical > li a:hover {
+  font-size: 17px;
+  color: white;
+  background: black;
+  border: 2px solid black;
+  box-shadow: 1px 1px 10px black;
+}

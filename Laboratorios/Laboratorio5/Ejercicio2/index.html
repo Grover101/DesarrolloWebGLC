@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendario</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <div
+          id="calendario"
+          class="card mt-3 mb-3 p-3"
+          style="width: 50%"
+        ></div>
+      </div>
+
+      <div class="row">
+        <dvi class="col-1"></dvi>
+        <div class="col-5">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Mes</span>
+            <select
+              id="mes"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option value="1" selected>Enero</option>
+              <option value="2">Febrero</option>
+              <option value="3">Marzo</option>
+              <option value="4">Abril</option>
+              <option value="5">Mayo</option>
+              <option value="6">Junio</option>
+              <option value="7">Julio</option>
+              <option value="8">Agosto</option>
+              <option value="9">Septiembre</option>
+              <option value="10">Octubre</option>
+              <option value="11">Noviembre</option>
+              <option value="12">Diciembre</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Año</span>
+            <input
+              type="number"
+              class="form-control"
+              id="anio"
+              placeholder="Año"
+            />
+          </div>
+        </div>
+
+        <dvi class="col-1"></dvi>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-2">
+          <button type="submit" class="btn btn-primary mb-3" onclick="enviar()">
+            Mostrar
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

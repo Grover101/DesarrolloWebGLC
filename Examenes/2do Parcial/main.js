@@ -131,5 +131,31 @@ logout = () => {
     }).catch(function (err) {
         alert('error');
     });
+}
 
+mostrarImputs = () => {
+    const numInputs = parseInt(document.getElementById('numEntradas').value);
+    var entradas = `
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+    <button type="submit" class="btn btn-primary" onclick="sumar()"> + </button>
+    </div>
+    <div class="col-md-3">`;
+    for (let i = 0; i < numInputs; i++) {
+        entradas += `<input type="number" id="input${i}" class="form-control text-center" />`
+    }
+    entradas += `
+    </div>
+    <div class="col-md-3"></div>`
+    document.getElementById('entradas').innerHTML = entradas
+    document.getElementById('res').innerHTML = `<input type="text" disabled id="resultado" class="form-control text-center" />`
+}
+
+sumar = () => {
+    const numInputs = parseInt(document.getElementById('numEntradas').value);
+    var resultado = 0;
+    for (let i = 0; i < numInputs; i++) {
+        resultado += parseInt(document.getElementById('input' + i).value)
+    }
+    document.getElementById('resultado').value = resultado
 }

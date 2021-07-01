@@ -1,0 +1,24 @@
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="carreras">Carrera</label>
+  </div>
+  <select
+    class="custom-select"
+    name="carreras"
+    id="carreras"
+    onchange="cambiarCarreras()"
+  ></select>
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="libros">libro</label>
+  </div>
+  <select class="custom-select" name="libros" id="libros"></select>
+</div>
+<div class="input-group mb-4">
+  <span class="input-group-text">Nombre del Prestante</span>
+  <input type="text" id="nomPrestamo" class="form-control" />
+</div>
+<button type="submit" class="btn btn-primary" onclick="registrarPrestamo()">
+  Registrar
+</button>

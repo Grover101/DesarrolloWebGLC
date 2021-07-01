@@ -39,6 +39,7 @@ cargarContenido = (abrir) => {
     ajax.onreadystatechange = function () {
         if (ajax.readyState == 4) {
             contenedor.innerHTML = ajax.responseText;
+            cargarPrestamos();
         }
     }
     ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
@@ -158,4 +159,56 @@ sumar = () => {
         resultado += parseInt(document.getElementById('input' + i).value)
     }
     document.getElementById('resultado').value = resultado
+}
+
+
+cargarPrestamos = () => {
+    let ajax = new XMLHttpRequest()
+    ajax.open("GET", 'carreras.php', true);
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            carreras = eval(ajax.responseText);
+            carreraAux = document.getElementById('carreras');
+            carreraAux.innerHTML = ''
+            for (var i = 0; i < carreras.length; i++)
+                carreraAux.appendChild(new Option(carreras[i].carrera, carreras[i].id));
+        }
+    }
+    ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
+    ajax.send(null);
+}
+
+cambiarCarreras = () => {
+    var parametro = "id=" + document.getElementById('carreras').value;
+    let ajax = new XMLHttpRequest()
+    ajax.open("get", 'libros.php?' + parametro, true);
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            libros = eval(ajax.responseText);
+            libroAux = document.getElementById('libros');
+            libroAux.innerHTML = '';
+            for (var i = 0; i < libros.length; i++)
+                libroAux.appendChild(new Option(libros[i].titulo, libros[i].id));
+
+        }
+    }
+    ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
+    ajax.send(null);
+}
+
+
+registrarPrestamo = () => {
+    let ajax = new XMLHttpRequest()
+    ajax.open("POST", "registrar.php", true);
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            registrar = document.getElementById('contenido');
+            registrar.innerHTML = ajax.responseText;
+        }
+    }
+    ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    ajax.send("libro=" + document.getElementById('libros').value +
+        "&prestamo=" + document.getElementById('nomPrestamo').value +
+        "&nocache=" + Math.random());
+
 }

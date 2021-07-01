@@ -2,7 +2,6 @@
 include './conexion.php';
 $libro = $_POST['libro'];
 $prestamo = $_POST['prestamo'];
-echo 'alsdkfjlasd';
 $sql = "INSERT INTO `prestamos`( `idlibro`, `nombreprestamo`) VALUES ($libro,'$prestamo')";
 
 $query = mysqli_query($con, $sql);

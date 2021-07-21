@@ -1,0 +1,212 @@
+.contenido,
+.cabecera,
+.footer,
+.wrap {
+  font-family: sans-serif;
+  margin: auto;
+  width: 900px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.tecnologia {
+  margin-left: 20px;
+  width: 90px;
+}
+
+.wrap {
+  display: flex;
+}
+
+.cuerpo {
+  width: 770px;
+}
+
+.menu {
+  width: 130px;
+  background-color: #0070c0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.cabecera {
+  border: 1px solid black;
+  background-color: #ffcc00;
+  text-align: center;
+}
+
+.datos {
+  text-align: left;
+  color: black;
+  padding: 10px;
+}
+
+a {
+  /* text-decoration: none; */
+  color: black !important;
+}
+
+li {
+  margin: 10px;
+}
+
+ul.menuvertical {
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.cuerpo {
+  clear: both;
+  padding: 20px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.footer {
+  text-align: center;
+  height: 50px;
+  background-color: #c00000;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  line-height: 20px;
+}
+
+.celeste {
+  color: #4c9bd3;
+}
+
+.cerrar {
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 2px 10px;
+  color: black;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #0000ff;
+  color: white;
+}
+
+td,
+th {
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+form {
+  width: 500px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+}
+
+select {
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form input {
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form button {
+  padding: 8px 16px;
+  margin-top: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+h1,
+h2,
+h5 {
+  margin: auto;
+  text-align: center;
+}
+
+.calendario {
+  height: 150px;
+  width: 100%;
+  border-style: solid;
+  border-color: #70ad47;
+}
+
+.calendario th {
+  color: white;
+  background-color: #70ad47;
+}
+
+.impar {
+  background-color: #e2efd9;
+}
+.par {
+  background-color: #ffffff;
+}
+
+.contenido > .form {
+  width: 100%;
+  border: none;
+}
+
+.form table th {
+  background-color: #002060;
+}
+
+.form table .colorPar {
+  background-color: #dbe5f1;
+}
+
+.form table .colorImpar {
+  background-color: #8db3e2;
+}
+
+.error {
+  color: red;
+}
+
+.notificacion {
+  background-color: #20c997;
+  color: white;
+}

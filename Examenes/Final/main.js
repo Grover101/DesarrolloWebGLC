@@ -11,67 +11,31 @@ cargarContenido = (abrir) => {
     ajax.send(null);
 }
 
-function final(n, cadena) {
-    this.n = n
-    this.cadena = cadena
-    this.Calcularsumatoria = Calcularsumatoria = (n) => {
-        let cont = 0;
-        for (let i = 0; i <= n; i++)
-            cont += i;
-        return "<span> Sumatoria es: " + cont + "</span><br>";
-    }
-    this.Diagonal = Diagonal = (cadena) => {
-        let size = cadena.length;
-        let recorre = 0;
-        let tabla = '<span>Resultado para la Tabla:</span><table class="table">';
-        for (let i = 0; i < size; i++) {
-            tabla += "<tr>";
-            for (let j = 0; j < size; j++)
-                tabla += (j == recorre) ? `<td style="background: blue;">${cadena[j]}</td>` : `<td>&nbsp;</td>`;
-            recorre++
-            tabla += "</tr>";
-        }
-        tabla += '</table>';
-        return tabla;
-    }
-}
-
-calcularSum = (abrir) => {
+calcularSum = () => {
     let contenedor = document.getElementById('cuerpo');
     let ajax = new XMLHttpRequest()
-    if (abrir == 'sumatoria') {
-        ajax.open("GET", 'formularion.html', true);
-        ajax.onreadystatechange = function () {
-            if (ajax.readyState == 4) {
-                contenedor.innerHTML = ajax.responseText;
-            }
+    ajax.open("GET", 'final.php?n=' + parseInt(document.getElementById('numEntrada').value), true);
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            contenedor.innerHTML = ajax.responseText;
         }
-        ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
-        ajax.send(null);
     }
-    else {
-        ajax.open("POST", "formulariocadena.html", true);
-        ajax.onreadystatechange = function () {
-            if (ajax.readyState == 4) {
-                contenedor.innerHTML = ajax.responseText
-            }
-        }
-        ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        ajax.send(null);
-    }
-
-}
-
-calcularSum = () => {
-    let n = parseInt(document.getElementById('numEntrada').value);
-    sum = new final(n, '');
-    document.getElementById('sumTable').innerHTML = sum.Calcularsumatoria(sum.n)
+    ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
+    ajax.send(null);
 }
 
 calcularCadena = () => {
-    let cadena = document.getElementById('textEntrada').value;
-    calc = new final(0, cadena);
-    document.getElementById('sumTable').innerHTML = calc.Diagonal(calc.cadena)
+    let contenedor = document.getElementById('cuerpo');
+    let ajax = new XMLHttpRequest()
+    ajax.open("POST", "final.php", true);
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            contenedor.innerHTML = ajax.responseText
+        }
+    }
+    ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    ajax.send("&cadena=" + document.getElementById('textEntrada').value +
+        "&nocache=" + Math.random());
 }
 
 crearBotones = () => {

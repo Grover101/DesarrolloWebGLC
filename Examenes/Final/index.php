@@ -1,11 +1,7 @@
 <?php
-
-// session_start();
 if (!isset($_COOKIE['ingreso'])) {
-    echo 'hoasdf';
     setcookie("ingreso", 1, time() + 3600);
 }
-// if (isset($_SESSION['email']))
 ?>
 <!DOCTYPE html>
 <html lang="en">

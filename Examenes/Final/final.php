@@ -4,7 +4,7 @@ class A
 {
     private $n;
     private $cadena;
-    function __construct($n, $cadena)
+    function __construct($n = null, $cadena = null)
     {
         $this->n = $n;
         $this->cadena = $cadena;
@@ -12,9 +12,15 @@ class A
     function Calcularsumatoria()
     {
         $cont = 0;
-        for ($i = 0; $i <= $this->n; $i++)
+        $texto = '';
+        for ($i = 1; $i <= $this->n; $i++) {
             $cont += $i;
-        return "<span> Sumatoria es: " . $cont . "</span><br>";
+            $texto .= $i;
+            if ($i < $this->n) {
+                $texto .= '+';
+            }
+        }
+        return "<span> Sumatoria es: " . $texto . " = " . $cont . "</span><br>";
     }
     function Diagonal()
     {
@@ -35,10 +41,10 @@ class A
 
 
 if (isset($_POST['cadena'])) {
-    $cad = new A(0, $_POST['cadena']);
+    $cad = new A(null, $_POST['cadena']);
     echo $cad->Diagonal();
 }
 if (isset($_GET['n'])) {
-    $cad = new A($_GET['n'], '');
+    $cad = new A($_GET['n']);
     echo $cad->Calcularsumatoria();
 }

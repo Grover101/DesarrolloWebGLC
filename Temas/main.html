@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="pregunta">
+      <input type="radio" name="opcion" id="1" value="1" />
+      <label for="">PHP</label><br />
+      <input type="radio" name="opcion" id="2" value="2" />
+      <label for="">ASP.NET</label><br />
+      <input type="radio" name="opcion" id="3" value="3" />
+      <label for="">JSP</label><br />
+      <input type="radio" name="opcion" id="4" value="4" checked />
+      <label for="">OTROS</label><br />
+      <button name="enviar" onclick="enviarEncuesta()">Enviar Opcion</button>
+      <button name="mostrar" onclick="mostrarEncuesta()">
+        Mostrar Resultado
+      </button>
+    </div>
+    <div id="contenido"></div>
+    <script>
+      enviarEncuesta = () => {
+        let contenedor = document.getElementById("contenido");
+        let opcion;
+        if (document.getElementById("1").checked) opcion = "php";
+        if (document.getElementById("2").checked) opcion = "asp";
+        if (document.getElementById("3").checked) opcion = "jsp";
+        if (document.getElementById("4").checked) opcion = "otros";
+        let ajax = new XMLHttpRequest();
+        ajax.open("POST", "./encuesta.php", true);
+        ajax.onreadystatechange = function () {
+          if (ajax.readyState == 4) {
+            contenedor.innerHTML = ajax.responseText;
+          }
+        };
+        ajax.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
+        ajax.send("&opcion=" + opcion + "&nocache=" + Math.random());
+      };
+      mostrarEncuesta = () => {
+        let contenedor = document.getElementById("contenido");
+        let ajax = new XMLHttpRequest();
+        ajax.open("GET", "./mostrar.php", true);
+        ajax.onreadystatechange = function () {
+          if (ajax.readyState == 4) {
+            contenedor.innerHTML = ajax.responseText;
+          }
+        };
+        ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
+        ajax.send(null);
+      };
+    </script>
+  </body>
+</html>

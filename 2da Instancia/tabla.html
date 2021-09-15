@@ -1,0 +1,92 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="input-group mb-3">
+      <span class="input-group-text">Tabla del </span>
+      <input type="number" id="tablade" class="form-control" />
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="row">
+      <div class="col-6">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            name="operacion"
+            type="radio"
+            value="multiplicacion"
+            id="multiplicacion"
+            checked
+          />
+          <label class="form-check-label" for="multiplicacion">
+            Multiplicacion
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            name="operacion"
+            type="radio"
+            value="division"
+            id="division"
+          />
+          <label class="form-check-label" for="division"> Division </label>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            name="operacion"
+            type="radio"
+            value="suma"
+            id="suma"
+          />
+          <label class="form-check-label" for="suma"> Suma </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            name="operacion"
+            type="radio"
+            value="resta"
+            id="resta"
+          />
+          <label class="form-check-label" for="resta"> Resta </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <button type="button" class="btn btn-primary" onclick="mostrarTabla()">
+      Tabla
+    </button>
+  </div>
+</div>
+<div id="resultado"></div>
+
+<script>
+  mostrarTabla = () => {
+    const operaAux = document.getElementsByName("operacion");
+    let operacion;
+    for (let i = 0; i < operaAux.length; i++)
+      if (operaAux[i].checked) operacion = operaAux[i].value;
+    fetch(
+      "tablaoperaciones.php?num=" +
+        document.getElementById("tablade").value +
+        "&tabla=" +
+        operacion,
+      {
+        method: "get",
+      }
+    )
+      .then(function (response) {
+        return response.text();
+      })
+      .then(function (text) {
+        document.getElementById("resultado").innerHTML = text;
+      })
+      .catch(function (err) {
+        alert("error");
+      });
+  };
+</script>
